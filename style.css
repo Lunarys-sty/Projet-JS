@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+body {
+    text-align: center;
+    font-family: 'Roboto';
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.wrapper {
+    width: 60%;
+    margin: 50px auto;
+    height: 35vh;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.player-0-panel, .player-1-panel {
+    width: 48%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.player-0-panel.active, .player-1-panel.active {
+    background-color: #f7f7f7;
+}
+
+.player-name {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.player-score {
+    font-size: 2rem;
+    margin: 0;
+    color: #eb4d4d;
+}
+
+.player-current-label {
+    font-size: 0.8rem;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    color: #777;
+}
+
+.player-current-score {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #555;
+}
+
+.btn-new, .btn-roll, .btn-hold {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #eb4d4d;
+    color: #fff;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.btn-new:hover, .btn-roll:hover, .btn-hold:hover {
+    background-color: #c53f3f;
+}
+
+.dice {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
